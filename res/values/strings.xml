@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">MobileBenchmarkActivity!</string>
+    <string name="app_name">Mobile Benchmark</string>
+    <string name="network_edge">Network : EDGE</string>
+    <string name="network_3g">Network : 3G</string>
+     <string name="network_detecting">Network : Detecting </string>
+     
+    <string name="update_speed">%s kbit/sec</string>
+    <string name="update_downloaded" formatted="false">Downloaded %s of %s</string>    
+    <string name="update_connectionspeed">Connection time %s ms</string>
+  
+    <string name="update_downloaded_complete" formatted="false">Downloaded %s @ %s kbit/sec</string>
+    <string name="hardwareinformation">Hardware Information: </string>
+    <string name="cputest">CPU Test: </string>
+    <string name="speedtest">Speedtest: </string>
+    <string name="iotest">IO Test:</string>
+</resources>

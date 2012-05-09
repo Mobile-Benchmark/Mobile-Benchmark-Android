@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" android:layout_height="match_parent" android:background="@drawable/background">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Intern Storage" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_width="wrap_content" android:layout_alignRight="@+id/externStorage" android:id="@+id/internStorage" android:layout_marginTop="100dip"></TextView>
+        <TextView android:layout_toRightOf="@+id/internReadSpeed" android:layout_alignBaseline="@+id/internReadSpeedText" android:layout_alignBottom="@+id/internReadSpeedText" android:text="Read Speed:" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignRight="@+id/internWriteSpeed" android:id="@+id/internReadSpeed"></TextView>
+        <EditText android:layout_alignParentRight="true" android:id="@+id/internReadSpeedText" android:layout_alignLeft="@+id/internWriteSpeedText" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/internWriteSpeedText" android:layout_width="match_parent" android:layout_marginRight="10dp"></EditText>
+        <TextView android:text="Write Speed:" android:layout_alignLeft="@+id/internStorage" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:layout_below="@+id/internStorage" android:layout_width="wrap_content" android:id="@+id/internWriteSpeed" android:layout_marginLeft="5dp"></TextView>
+        <EditText android:layout_toRightOf="@+id/internWriteSpeed" android:layout_alignBaseline="@+id/internWriteSpeed" android:layout_alignParentRight="true" android:id="@+id/internWriteSpeedText" android:layout_alignBottom="@+id/internWriteSpeed" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="10dp"></EditText>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Extern Storage" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/externStorage" android:layout_below="@+id/internReadSpeedText" android:layout_alignParentLeft="true" android:layout_marginTop="14dp"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:id="@+id/externReadSpeedText" android:layout_alignLeft="@+id/externWriteSpeedText" android:layout_below="@+id/externWriteSpeedText" android:layout_marginRight="10dp">
+            <requestFocus></requestFocus>
+        </EditText>
+        <TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:text="Write Speed:" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/externWriteSpeedText" android:layout_alignBottom="@+id/externWriteSpeedText" android:layout_alignRight="@+id/internReadSpeed"></TextView>
+        <EditText android:layout_width="match_parent" android:id="@+id/externWriteSpeedText" android:layout_height="wrap_content" android:layout_below="@+id/externStorage" android:layout_alignLeft="@+id/internReadSpeedText" android:layout_marginRight="10dp"></EditText>
+        <TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:text="Read Speed:" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/externReadSpeedText" android:layout_alignBottom="@+id/externReadSpeedText" android:layout_alignRight="@+id/TextView02"></TextView>
+    </RelativeLayout>
+</LinearLayout>

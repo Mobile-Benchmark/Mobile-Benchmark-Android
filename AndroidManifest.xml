@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android.benchmark"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".BenchmarkApplication">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".cputest.CPUBenchmark"></activity>
+        <activity android:name=".gputest.GPUBenchmark"></activity>
+        <activity android:name=".hardwareinformation.HardwareInformation" android:configChanges="orientation"></activity>
+        <activity android:name=".iostoragetest.IOStorageBenchmark"></activity>
+        <activity android:name="com.android.memorytest.MemoryBenchMark"></activity>
+		<activity android:name=".internettest.InternetTestBenchmark"></activity>
+		<activity android:name=".ResultsActivity"></activity>
+		<activity android:name=".BenchmarkHistoryActivity" android:configChanges="orientation"></activity>
+		<activity android:name=".BenchmarkHistoryResult" android:configChanges="orientation"></activity>
+    </application>
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/background_landscape">
+		<Button android:layout_toLeftOf="@+id/speedTest" android:layout_height="wrap_content" android:drawableLeft="@drawable/stats" android:text="IO Test" android:layout_width="wrap_content" android:id="@+id/testIOStorageButton" android:layout_alignBaseline="@+id/testCPUButton" android:gravity="left|center_vertical" android:layout_alignBottom="@+id/testCPUButton"></Button>
+		<Button android:layout_height="wrap_content" android:drawableLeft="@drawable/stats" android:text="SpeedTest" android:layout_width="wrap_content" android:id="@+id/speedTest" android:gravity="left|center_vertical" android:layout_alignBaseline="@+id/testIOStorageButton" android:layout_alignBottom="@+id/testIOStorageButton" android:layout_alignParentRight="true"></Button>
+		<Button android:layout_height="wrap_content" android:drawableLeft="@drawable/stats" android:text="CPU test" android:layout_width="wrap_content" android:id="@+id/testCPUButton" android:gravity="left|center_vertical" android:layout_alignBaseline="@+id/hardwareInfoButton" android:layout_alignBottom="@+id/hardwareInfoButton" android:layout_toLeftOf="@+id/testIOStorageButton"></Button>
+		<Button android:layout_height="wrap_content" android:drawableLeft="@drawable/stats" android:text="Test All" android:layout_width="wrap_content" android:id="@+id/testAllButton" android:gravity="left|center_vertical" android:layout_alignBaseline="@+id/hardwareInfoButton" android:layout_alignBottom="@+id/hardwareInfoButton" android:layout_alignParentLeft="true"></Button>
+		<Button android:layout_height="wrap_content" android:drawableLeft="@drawable/stats" android:text="Hardware Info" android:layout_width="wrap_content" android:id="@+id/hardwareInfoButton" android:gravity="left|center_vertical" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/testAllButton" android:layout_marginTop="108dp"></Button>
+	</RelativeLayout>
+</LinearLayout>

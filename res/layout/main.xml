@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:layout_height="match_parent"
+		android:id="@+id/relativeLayout1" android:layout_width="match_parent"
+		android:background="@drawable/background">
+		<Button android:layout_width="wrap_content"
+			android:drawableLeft="@drawable/stats" android:id="@+id/testAllButton"
+			android:text="Test All" android:gravity="left|center_vertical"
+			android:layout_height="wrap_content" android:layout_alignBottom="@+id/hardwareInfoButton"
+			android:layout_alignLeft="@+id/hardwareInfoButton"
+			android:layout_marginBottom="50dp" android:layout_alignRight="@+id/hardwareInfoButton"></Button>
+		<Button android:layout_width="wrap_content"
+			android:drawableLeft="@drawable/stats" android:id="@+id/testCPUButton"
+			android:text="CPU test" android:gravity="left|center_vertical"
+			android:layout_height="wrap_content" android:layout_below="@+id/hardwareInfoButton"
+			android:layout_alignLeft="@+id/hardwareInfoButton"
+			android:layout_alignRight="@+id/hardwareInfoButton"></Button>
+		<Button android:layout_width="wrap_content"
+			android:drawableLeft="@drawable/stats" android:id="@+id/testIOStorageButton"
+			android:text="IO Test" android:gravity="left|center_vertical"
+			android:layout_height="wrap_content" android:layout_below="@+id/testCPUButton"
+			android:layout_alignLeft="@+id/testCPUButton"
+			android:layout_alignRight="@+id/testCPUButton"></Button>
+		<Button android:layout_width="wrap_content"
+			android:drawableLeft="@drawable/stats" android:id="@+id/speedTest"
+			android:text="SpeedTest" android:gravity="left|center_vertical"
+			android:layout_height="wrap_content" android:layout_below="@+id/testIOStorageButton"
+			android:layout_alignLeft="@+id/testIOStorageButton"
+			android:layout_alignRight="@+id/testIOStorageButton"></Button>
+		<Button android:layout_width="wrap_content"
+			android:drawableLeft="@drawable/stats" android:id="@+id/hardwareInfoButton"
+			android:text="Hardware Info" android:gravity="left|center_vertical"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true" android:layout_marginLeft="32dp"
+			android:layout_marginTop="152dp"></Button>
+
+	</RelativeLayout>
+</LinearLayout>

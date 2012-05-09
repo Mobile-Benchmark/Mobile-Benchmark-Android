@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent" android:layout_height="fill_parent">
+    <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" android:layout_height="match_parent" android:background="@drawable/background_no_logo">
+   		<ListView android:id="@+id/ListView" android:background="@android:color/transparent" android:cacheColorHint="#00000000" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_height="300dp" android:layout_below="@+id/textView1" android:layout_marginBottom="60dp"></ListView>
+   		<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Results:" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="18dp" android:layout_marginTop="32dp"></TextView>
+   		<Button android:layout_height="wrap_content" android:id="@+id/backButton" android:text="Close" android:layout_width="wrap_content" android:layout_alignBottom="@+id/textView1" android:layout_alignParentRight="true" android:layout_marginRight="22dp"></Button>
+   		<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:id="@+id/submitButton" android:text="Submit Scores"></Button>
+   
+    </RelativeLayout>
+    
+</LinearLayout>

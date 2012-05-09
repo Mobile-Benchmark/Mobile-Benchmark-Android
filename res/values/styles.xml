@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="intro_blurb">
+		<item name="android:textSize">22sp</item>
+		<item name="android:textColor">#dd2320</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	
+	<!--  this is the style for the container ListView, not the rows -->
+	<!--  the rows are defined in code, see ReviewAdapter.ReviewListView -->
+	<style name="review_list">
+		<item name="android:background">#ae3400</item>
+	</style>
+
+
+
+</resources>
